@@ -1,1 +1,69 @@
-asdasdasdasd
+<html>
+
+<head>
+    <title>Deneme</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body>
+    <script type="text/javascript">
+        window.onload = function() {
+
+            var desktopFallback = "https://m.youtube.com/watch?v=Me0uv_mS9iM";
+          
+
+                app = "vnd.youtube://m.youtube.com/watch?v=Me0uv_mS9iM";
+           
+
+            if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+
+                window.location = app;
+
+            } 
+
+            else {
+
+                window.location = desktopFallback;
+
+            }
+
+
+
+            function killPopup() {
+
+                window.removeEventListener('pagehide', killPopup);
+
+            }
+
+
+
+            window.addEventListener('pagehide', killPopup);
+
+
+        };
+
+
+
+        setTimeout(function(){location.href="https://m.youtube.com/watch?v=Me0uv_mS9iM"} , 0);   
+
+
+
+    </script>
+
+    Bağlantı açılmadıysa aşağıdaki linke tıklayın ya da 5 saniye bekleyin<br>
+
+    If the link does not open click here or wait 5 second<br><br>
+
+    <a href="" target="_blank">https://m.youtube.com/watch?v=Me0uv_mS9iM</a>
+
+
+
+
+
+   
+
+
+
+</body>
+
+</html>
